@@ -49,7 +49,13 @@ class ProductsControllerTest < ActionController::TestCase
     assert_difference('Product.count', -1) do
       delete :destroy, id: @product
     end
-
     assert_redirected_to products_path
+  end
+
+  test "there is a form and submit button in new path" do
+    get :new
+    assert_response :success
+    assert_select "form", 1
+    assert_select 'input[type="submit"]', 1
   end
 end
