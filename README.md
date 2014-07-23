@@ -1,4 +1,3 @@
-depot
-=====
+rails-comic-bookstore
 
-Shopping Cart app build with Rails 4, full app of the book: Agile Web Development with Rails 4
+Aplicación de ejemplo en Ruby on Rails  http://devacademy.la  
